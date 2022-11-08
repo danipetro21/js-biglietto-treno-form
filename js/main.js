@@ -1,5 +1,5 @@
 const priceC = 0.21;
-const button = document.getElementById('btn');
+// const button = document.getElementById('btn');
 let eta;
 let priceF;
 let distanza;
@@ -17,7 +17,7 @@ nome = document.getElementById('name').value;
 
 // funzione calcola biglietto
 
-button.addEventListener('click',calcuteTicket(), outputTicket());
+// button.addEventListener('click',calcuteTicket(), outputTicket());
 
 
 
@@ -39,14 +39,16 @@ function calcuteTicket() {
     priceF = priceF.toFixed(2);
     //output finale
     console.log(priceF);
-}
+    console.log(nome);
+    
 
+  
+}
 
 //   variabili per riempire la tabella
 
 function outputTicket() {
-    
-    // document.getElementById('active').style.display = 'block';
+     document.getElementById('active').style.display = 'flex';
 
     document.getElementById("nomeTd").innerHTML = nome;
     document.getElementById("prezzoTd").innerHTML = priceF + " euro";
@@ -54,6 +56,8 @@ function outputTicket() {
     document.getElementById("scontoTd").innerHTML = promozione;
 
     
+
+
   
 }
 
