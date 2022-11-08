@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TreniLentiItalia</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="ticket-box">
+
+            <div class="top">
+
+                <div class="form">
+                    <label for="name">Inserisci nome e cognome</label>
+                    <input type="name" id="name" name="name" placeholder="nome e cognome">
+                </div>
+
+                <div class="form">
+                    <label for="km">Inserisci la distanza</label>
+                    <input type="name" id="km" name="km" placeholder="km">
+                </div>
+
+
+                <div class="form">
+                    <label for="eta">Scegli l'eta</label>
+                    <select id="eta" name="eta">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over-65">Over 65</option>
+                    </select>
+                </div>
+
+                <input type="button" id="btn" value="Calcola il biglietto">
+
+            </div>
+
+
+        </div>
+
+        <div class="ticket-box" id="active">
+            <div class="bottom">
+
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Prezzo del biglietto</th>
+                        <th>Codice univoco</th>
+                        <th>Sconto applicato</th>
+                    </tr>
+                    <tr>
+                        <td id="nomeTd"></td>
+                        <td id="prezzoTd"></td>
+                        <td id="cuTd"></td>
+                        <td id="scontoTd"></td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
