@@ -47,7 +47,7 @@ select {
     padding: 10px;
     border: 2px black solid;
     border-radius: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .form {
@@ -75,9 +75,20 @@ select {
 th,
 td {
     border: 1px solid black;
-    padding: 30px;
+    padding: 20px;
 }
 
 #active {
     display: none;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .top{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+    
 }
